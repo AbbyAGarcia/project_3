@@ -4,10 +4,14 @@ function initMap() {
     zoom: 12,
     center: saoPaulo,
   });
-
+  // created and added google maps marker 
   new google.maps.Marker({
     position: saoPaulo,
     map: map,
+    icon:{
+      url:"http://maps.google.com/mapfiles/ms/icons/green-dot.png", // green marker
+  },
   });
 }
+
 
