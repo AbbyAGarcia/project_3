@@ -21,6 +21,7 @@ function initMap() {
   }); 
 }
 /*box slider for media sec index.html*/
+window.onload = function(){
 var slider = document.getElementById('slide'),
     btnLeft = document.getElementById('left'),
     btnRight = document.getElementById('right'),
@@ -45,6 +46,8 @@ btnLeft.onclick = function slideLeft() {
 }
 
 setInterval(slideLeft, 1000);
+}
+
 
 
 
