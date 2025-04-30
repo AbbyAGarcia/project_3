@@ -122,7 +122,6 @@ body{
   max-height: 50%;
 }
 
-/* === Arrows === */
 #left, #right {
   width: 30px;
   height: 210px;
@@ -149,6 +148,48 @@ body{
 
 #right {
   right: 0;
+}
+/*media quries*/
+/* Medium screens (600px–900px) */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  #page_wrap {
+    width: 90%;
+  }
+
+  #section_one,
+  #section_resume,
+  #section_media {
+    width: 90%;
+    padding: 30px;
+  }
+
+  #main_nav ul li a {
+    font-size: 1.5em;
+    padding: 8px 16px;
+  }
+
+  #slide {
+    width: 1200px;
+  }
+}
+
+/* Medium-large screens (900px–1199px) */
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  #page_wrap {
+    width: 95%;
+  }
+
+  #section_one,
+  #section_resume,
+  #section_media {
+    width: 80%;
+    padding: 40px;
+  }
+
+  #main_nav ul li a {
+    font-size: 1.75em;
+    padding: 10px 20px;
+  }
 }
 
 
