@@ -20,5 +20,31 @@ function initMap() {
     infoWindow.open(map,marker);
   }); 
 }
+/*box slider for media sec index.html*/
+var slider = document.getElementById('slide'),
+    btnLeft = document.getElementById('left'),
+    btnRight = document.getElementById('right'),
+    margin = 0;
+
+btnRight.onclick = function slideRight() {
+  if(margin <= -1200) {
+    margin = 0;
+  } else {
+    margin = margin + -400;
+  }
+  slider.style.marginLeft = margin + "px";
+}
+
+btnLeft.onclick = function slideLeft() {
+  if(margin >= 0) {
+    margin = -1200;
+  } else {
+    margin = margin + 400;
+  }
+  slider.style.marginLeft = margin + "px";
+}
+
+setInterval(slideLeft, 1000);
+
 
 

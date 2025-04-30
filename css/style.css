@@ -55,60 +55,93 @@ body{
   font-family: 'Doto', monospace;
   color:rgba(0,255,0,1);
 }
- h1{
-  text-align: center;
-}
-/* h2 font and centering*/
-h2{
-  font-size: 2em;
-  font-family: 'Roboto mono', roboto;
-  color:rgba(0,0,0);
-}
-h2{
-  text-align:center;
-}
 
-/*h3 font and centering*/
-h3{
-  font-size:2em;
-  font-family: 'Roboto mono', roboto;
-  color: rgba(0,0,0)
-}
-h3{
-  text-align: center;
-}
-/*text font and centering*/
-p{
-  font-size:1em;
-  font-family: 'Arial', arial;
-  color: rgba(0,0,0)
-}
-p{
-  text-align: center;
-}
-/*img centering*/
-img{
-  display:block;
-  margin: auto;
-  width: 25%;
-  height: 50%;
-}
-/*resume page center alignment*/
-#content_wrap ul li{
-  text-align: center;
-}
-#content_wrap ul li{
-  list-style:none;
-}
-#content_wrap ul li{
-  font-size:1em;
-  font-family: 'Arial', arial;
-  color: rgba(0,0,0)
-}
+
 #map{
   height: 500px;
   width: 100%;
 }
+/* about me section*/
+#section_one{
+  width: 300px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: rgba(0,255,0,0.5);
+  padding: 50px;
+  margin: 20px auto;
+}
+#section_resume{
+  width: 500px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: rgba(0,255,0,0.5);
+  padding: 50px;
+  margin: 20px auto;
+}
+#section_resume ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+/*box slider*/
+#box_sli {
+  position: relative;
+  width: 400px;
+  height: 210px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+#slide {
+  width: 1200px;
+  height: 210px;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+#slide span {
+  width: 400px;
+  height: 210px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+#slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* === Arrows === */
+#left, #right {
+  width: 30px;
+  height: 210px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2em;
+  line-height: 210px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  opacity: 0.5;
+  user-select: none;
+}
+
+#left:hover, #right:hover {
+  opacity: 1;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
 
   
 
